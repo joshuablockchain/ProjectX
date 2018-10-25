@@ -1,0 +1,12 @@
+require - is equal to import in java
+path - built in module , handles directories , 
+app.use(express.static('public')); - line that tell to use public folder
+
+Create - POST
+Read - GET
+Update - PUT
+Delete -DELETE
+
+simple json store
+
+
