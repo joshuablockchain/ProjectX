@@ -7,7 +7,10 @@ const indexRouter = require('./server/routers/indexRouter');
 const walletRouter = require('./server/routers/walletRouter');
 const port = 3000;
 
+
 app.use(morgan('dev'));
+
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 

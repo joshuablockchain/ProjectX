@@ -1,25 +1,183 @@
 {
-	"newBalance": 187,
+	"newBalance": 157,
 	"transaction": [
 		{
 			"id": 1,
-			"transaction": "asd"
+			"newBalance": 123,
+			"transacType": "Deposit",
+			"moment": "2018-10-30T09:00:07.423Z"
 		},
 		{
 			"id": 2,
-			"transaction": "asd"
+			"newBalance": 157,
+			"transacType": "Deposit",
+			"moment": "2018-10-30T09:00:07.423Z"
 		},
 		{
 			"id": 3,
-			"transaction": "asd"
+			"newBalance": 56,
+			"transacType": "Deposit",
+			"moment": "2018 30th 10"
 		},
 		{
 			"id": 4,
-			"transaction": "asd"
+			"newBalance": 34,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018"
 		},
 		{
 			"id": 5,
-			"transaction": "asd"
+			"newBalance": 12,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018 | 05:04:10 pm"
+		},
+		{
+			"id": 6,
+			"newBalance": 11,
+			"transacType": "Withdraw",
+			"moment": "Tuesday, October 30th 2018 | 05:04:10 pm"
+		},
+		{
+			"id": 7,
+			"newBalance": 689,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018 | 05:04:10 pm"
+		},
+		{
+			"id": 8,
+			"newBalance": 655,
+			"transacType": "Withdraw",
+			"moment": "Tuesday, October 30th 2018 | 05:04:10 pm"
+		},
+		{
+			"id": 9,
+			"newBalance": 610,
+			"transacType": "Fund Transfer",
+			"moment": "Tuesday, October 30th 2018 | 05:04:10 pm"
+		},
+		{
+			"id": 10,
+			"newBalance": 123,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018 | 05:06:00 pm"
+		},
+		{
+			"id": 11,
+			"newBalance": 12,
+			"transacType": "Deposit",
+			"moment": "2018-10-30T09:06:44.106Z"
+		},
+		{
+			"id": 12,
+			"newBalance": 46,
+			"transacType": "Deposit",
+			"moment": "2018-10-30T09:06:44.106Z"
+		},
+		{
+			"id": 13,
+			"newBalance": 45,
+			"transacType": "Deposit"
+		},
+		{
+			"id": 14,
+			"newBalance": 123,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:10:59 pm"
+		},
+		{
+			"id": 15,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": null
+		},
+		{
+			"id": 16,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"moment": null
+		},
+		{
+			"id": 17,
+			"newBalance": 0,
+			"transacType": "Deposit"
+		},
+		{
+			"id": 18,
+			"newBalance": 123,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018 | 05:15:27 pm"
+		},
+		{
+			"id": 19,
+			"newBalance": 166,
+			"transacType": "Deposit",
+			"moment": "Tuesday, October 30th 2018 | 05:15:27 pm"
+		},
+		{
+			"id": 20,
+			"newBalance": 34,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:16:54 pm"
+		},
+		{
+			"id": 21,
+			"newBalance": 157,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:16:54 pm"
+		},
+		{
+			"id": 22,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": null
+		},
+		{
+			"id": 23,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": null
+		},
+		{
+			"id": 24,
+			"newBalance": 0,
+			"transacType": null,
+			"curDate": "Tuesday, October 30th 2018 | 05:21:50 pm"
+		},
+		{
+			"id": 25,
+			"newBalance": 0,
+			"transacType": null,
+			"curDate": "Tuesday, October 30th 2018 | 05:21:50 pm"
+		},
+		{
+			"id": 26,
+			"newBalance": 123,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:22:09 pm"
+		},
+		{
+			"id": 27,
+			"newBalance": 157,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:22:09 pm"
+		},
+		{
+			"id": 28,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:29:24 pm"
+		},
+		{
+			"id": 29,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:29:24 pm"
+		},
+		{
+			"id": 30,
+			"newBalance": 0,
+			"transacType": "Deposit",
+			"curDate": "Tuesday, October 30th 2018 | 05:29:24 pm"
 		}
 	]
 }
