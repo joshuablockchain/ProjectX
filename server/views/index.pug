@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    
+  body
+    main#walletVue(role="main" class="container")
+        div(class="panel panel-default")
+            div(class="panel panel-heading" style="font-size: 50px; color: #808080")#pageTitle Kwarta.ph
+            div(class="panel panel-body")
+              div(class="panel-group")
+              center
+                div(class="panel panel-primary" style="width: 40%;")
+                    div(class="panel-heading" style="font-size: 35px;") Balance
+                    div(class="panel-body" style="font-size: 30px; font-weight: bold;")#balance= 'Php ' + newBalance
+              center
+              form(action="/" method="POST")
+
+                div(class="panel-group")
+                    div(class="panel panel-success" style="width: 24%; float: left; margin-left: 10px; margin-top: 5px;")
+                        div(class="panel-heading" style="font-size: 35px; text-align: center;") Deposit
+                        div(class="panel-body" style="font-size: 30px; font-weight: bold;")
+                        .form-group
+                            input.form-control#deposit(type="text" name="deposit" v-model="deposit" style="width: 70%; margin-left: 40px; ")
+                            button.btn.btn-success(type="button" onClick="location.reload();" v-on:click="btnDeposit" style="margin-left: 90px; margin-top: 15px;") Deposit
+
+                    div(class="panel panel-warning" style="width: 24%; float: left; margin-left: 10px;")
+                        div(class="panel-heading" style="font-size: 35px; text-align: center;") Withdraw
+                        div(class="panel-body" style="font-size: 30px; font-weight: bold;")
+                        .form-group
+                            input.form-control#withdraw(type="text" name="withdraw" v-model="withdraw" style="width: 70%; margin-left: 40px;")
+                            button.btn.btn-warning(type="button" onClick="location.reload();" v-on:click="btnWithdraw" style="margin-left: 90px; margin-top: 15px;") Withdraw    
+              
+                    div(class="panel panel-danger" style="width: 24%; float: left; margin-left: 10px;")
+                        div(class="panel-heading" style="font-size: 35px; text-align: center;") Fund Transfer
+                        div(class="panel-body" style="font-size: 30px; font-weight: bold;")
+                        .form-group
+                            input.form-control#transfer(type="text" name="transfer" v-model="transfer" style="width: 70%; margin-left: 40px;")
+                            button.btn.btn-danger(type="button" onClick="location.reload();" v-on:click="btnTransfer" style="margin-left: 90px; margin-top: 15px;") Transfer    
+              
+                    div(class="panel panel-info" style="width: 24%; float: left; margin-left: 10px;")
+                        div(class="panel-heading" style="font-size: 35px; text-align: center;") Bills Payment
+                        div(class="panel-body" style="font-size: 30px; font-weight: bold;")
+                        .form-group
+                            input.form-control#payment(type="text" name="payment" v-model="payment" style="width: 70%; margin-left: 40px;")
+                            button.btn.btn-info(type="button" onClick="location.reload();" v-on:click="btnPayment" style="margin-left: 90px; margin-top: 15px;") Pay Bill    
+        div(class="panel panel-default")
+            div(class="panel panel-heading" style="font-size: 20px;") Transaction History
+            div(class="panel panel-body")        
+                table.table#notesTable
+                    tr
+                        th ID
+                        th Transaction Type
+                        th Balance
+                    tr(v-for="transac in transaction")
+                        td {{ transac.id }}
+                        td {{ transac.transaction }}
+                        td {{ transac.newBalance }}
+            
+
+        p(style="text-align: center;") All rights reserved(2018) | Created by: Clyde Custodio, Joshua Malabanan, Joshua Pentinio         
+    script(src="/axios.min.js")
+    script(src="/vue.js")
+    script(src="/wallet-vue.js")
